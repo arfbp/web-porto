@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-50: #e6f0fd;
+  --color-brand-100: #cce2fa;
+  --color-brand-500: #0070f3;
+  --color-brand-600: #0056b3;
+  --color-brand-900: #001a35;
+  
+  --color-accent-green: #00FF41;
+
+  --color-theme-base: var(--theme-base);
+  --color-theme-surface: var(--theme-surface);
+  --color-theme-surface-hover: var(--theme-surface-hover);
+  --color-theme-border: var(--theme-border);
+  --color-theme-border-hover: var(--theme-border-hover);
+  --color-theme-text: var(--theme-text);
+  --color-theme-heading: var(--theme-heading);
+  --color-theme-text-muted: var(--theme-text-muted);
+  --color-theme-text-faint: var(--theme-text-faint);
+  --color-theme-inverted: var(--theme-inverted);
+  --color-theme-inverted-text: var(--theme-inverted-text);
+}
+
+:root {
+  --theme-base: #050505;
+  --theme-surface: #0a0a0a;
+  --theme-surface-hover: #111111;
+  --theme-border: #1a1a1a;
+  --theme-border-hover: #333333;
+  --theme-text: #e0e0e0;
+  --theme-heading: #ffffff;
+  --theme-text-muted: #888888;
+  --theme-text-faint: #555555;
+  --theme-inverted: #ffffff;
+  --theme-inverted-text: #000000;
+}
+
+:root[data-theme="light"] {
+  --theme-base: #f8fafc;
+  --theme-surface: #ffffff;
+  --theme-surface-hover: #f1f5f9;
+  --theme-border: #e2e8f0;
+  --theme-border-hover: #cbd5e1;
+  --theme-text: #334155;
+  --theme-heading: #0f172a;
+  --theme-text-muted: #64748b;
+  --theme-text-faint: #94a3b8;
+  --theme-inverted: #000000;
+  --theme-inverted-text: #ffffff;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    @apply bg-theme-base text-theme-text font-sans antialiased overflow-x-hidden selection:bg-brand-500 selection:text-white;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-theme-heading font-bold tracking-tight;
+  }
+}
+
+.glass-panel {
+  @apply bg-theme-surface border border-theme-border;
+}
