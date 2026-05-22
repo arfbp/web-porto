@@ -1,4 +1,4 @@
-```json
+
 {
   "name": "react-example",
   "private": true,
@@ -47,4 +47,4 @@
     "vite": "^6.2.3"
   }
 }
-```
+
