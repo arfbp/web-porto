@@ -74,6 +74,9 @@ export function Layout({ children }: LayoutProps) {
           >
             {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
           </button>
+          <a href="https://drive.mocina.my.id/api/fs/public/L2xvY2FsL0FyaWYgQnVkaSBQcmFzZXRpby1yZXN1bWUucGRmOjA6NE50YVlwMVV1R2NzRFZTc0pGd0dfQzhWaEx2TlNYbFJnUnEzM2JSZEVjND0=" target="_blank" rel="noreferrer" className="hidden sm:inline-block px-4 py-2 sm:px-5 sm:py-2.5 bg-transparent border border-theme-border text-theme-text-muted font-bold uppercase text-[9px] sm:text-[10px] tracking-widest hover:border-[#0070f3] hover:text-theme-heading transition-all text-center whitespace-nowrap">
+            Download CV
+          </a>
           <a href="#contact" className="px-4 py-2 sm:px-5 sm:py-2.5 bg-theme-inverted text-theme-inverted-text font-bold uppercase text-[9px] sm:text-[10px] tracking-widest hover:bg-[#0070f3] hover:text-white transition-all text-center whitespace-nowrap">
             Contact Me
           </a>

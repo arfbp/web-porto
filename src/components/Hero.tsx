@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { ChevronDown, MapPin, Mail, Terminal, Cloud } from "lucide-react";
+import { ChevronDown, MapPin, Mail, Terminal, Cloud, Download } from "lucide-react";
 import { resumeData } from "../data";
 
 export function Hero() {
@@ -46,6 +46,14 @@ export function Hero() {
               className="w-full sm:w-auto px-8 py-4 bg-transparent border border-theme-border flex items-center justify-center hover:border-brand-500 hover:text-theme-heading text-theme-text-muted font-bold uppercase text-xs tracking-widest transition-all text-center"
             >
               Explore Projects
+            </a>
+            <a 
+              href="https://drive.mocina.my.id/api/fs/public/L2xvY2FsL0FyaWYgQnVkaSBQcmFzZXRpby1yZXN1bWUucGRmOjA6NE50YVlwMVV1R2NzRFZTc0pGd0dfQzhWaEx2TlNYbFJnUnEzM2JSZEVjND0=" 
+              target="_blank" 
+              rel="noreferrer"
+              className="w-full sm:w-auto px-8 py-4 bg-theme-inverted border border-theme-inverted flex items-center justify-center gap-2 hover:bg-[#0070f3] hover:border-[#0070f3] hover:text-white text-theme-inverted-text font-bold uppercase text-xs tracking-widest transition-all text-center"
+            >
+              <Download className="w-4 h-4" /> Download CV
             </a>
           </motion.div>
         </div>
