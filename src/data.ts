@@ -66,7 +66,7 @@ export const resumeData = {
       description:
         "Engineered a self-hosted cloud infrastructure on Zimaboard, utilizing CasaOS and Cloudflare Tunnel for secure remote access. Implemented Nextcloud for personal and shared document storage, achieving enhanced data privacy and control.",
       tags: ["Zimaboard", "CasaOS", "Cloudflare Tunnel", "Nextcloud", "Self-hosting"],
-      link: "https://jace2218.cc/",
+      link: "",
     },
     {
       id: "p3",
