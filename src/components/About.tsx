@@ -19,7 +19,7 @@ export function About() {
           </div>
           
           <div className="bg-theme-surface border border-theme-border p-10 rounded-2xl">
-            <h2 className="text-[11px] uppercase tracking-[0.3em] text-theme-text-faint font-semibold mb-6">About Architecture</h2>
+            <h2 className="text-[11px] uppercase tracking-[0.3em] text-theme-text-faint font-semibold mb-6">About Me</h2>
             <p className="text-theme-text-muted text-base leading-relaxed max-w-3xl font-mono">
               {resumeData.personalInfo.about}
             </p>

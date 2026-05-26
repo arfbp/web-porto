@@ -25,7 +25,7 @@ export const resumeData = {
       company: "PointStar",
       location: "Jakarta",
       role: "Server Engineer",
-      date: "Oct 2022 - Present",
+      date: "Oct 2022 - Oct 2023",
       description:
         "Specializing in cloud infrastructure management, managed services, and server administration. Proficient in managing environments on Google Cloud Platform, troubleshooting Linux and Windows servers, and delivering reliable technical support to clients. Strong track record of collaborating across cross-functional teams to ensure infrastructure stability, resolve complex issues, and maintain high service standards.",
       type: "Cloud Consultancy",
