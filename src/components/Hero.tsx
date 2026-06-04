@@ -1,15 +1,26 @@
+import { useState, useEffect } from 'react';
 import { motion } from "motion/react";
 import { ChevronDown, MapPin, Mail, Terminal, Cloud, Download } from "lucide-react";
 import { resumeData } from "../data";
 
 export default function Hero() {
+  const [animate, setAnimate] = useState(false);
+  
+  useEffect(() => {
+    // Enable animations after initial render (deferred on mobile)
+    const timer = requestIdleCallback?.(() => setAnimate(true)) || setTimeout(() => setAnimate(true), 100);
+    return () => {
+      if (typeof timer === 'number') clearTimeout(timer);
+    };
+  }, []);
+
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-6">
       <div className="max-w-5xl w-full mx-auto relative z-10 flex flex-col items-start md:flex-row md:items-center gap-12 text-left">
         <div className="flex-1">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={animate ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             className="flex items-center gap-3 mb-8"
           >
@@ -19,7 +30,7 @@ export default function Hero() {
 
           <motion.h1 
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={animate ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-6xl md:text-8xl font-bold tracking-tighter text-theme-heading leading-[0.9] mb-4"
           >
@@ -28,7 +39,7 @@ export default function Hero() {
 
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={animate ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-theme-text-muted font-mono text-sm tracking-wide mb-10"
           >
@@ -37,7 +48,7 @@ export default function Hero() {
 
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            animate={animate ? { opacity: 1, y: 0 } : { opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
           >
@@ -60,7 +71,7 @@ export default function Hero() {
         
         <motion.div
            initial={{ opacity: 0, scale: 0.9 }}
-           animate={{ opacity: 1, scale: 1 }}
+           animate={animate ? { opacity: 1, scale: 1 } : { opacity: 1, scale: 0.9 }}
            transition={{ duration: 0.7, delay: 0.2 }}
            className="relative flex-1 bg-theme-surface border border-theme-border rounded-2xl p-8 lg:p-12 flex flex-col justify-end overflow-hidden min-h-[400px] w-full"
         >
