@@ -37,6 +37,10 @@ export default defineConfig(() => {
             if (id.includes('src/data') || id.includes('src/types')) {
               return 'shared';
             }
+            // Hero section - separate chunk for better mobile loading
+            if (id.includes('src/components/Hero')) {
+              return 'hero';
+            }
           },
         },
       },

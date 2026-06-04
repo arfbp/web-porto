@@ -1,8 +1,8 @@
 import { Suspense, lazy } from 'react';
 import { Layout } from "./components/Layout";
-import { Hero } from "./components/Hero";
 
-// Lazy load non-critical sections
+// Lazy load sections for better mobile performance
+const Hero = lazy(() => import("./components/Hero"));
 const About = lazy(() => import("./components/About"));
 const Experience = lazy(() => import("./components/Experience"));
 const Skills = lazy(() => import("./components/Skills"));
@@ -19,7 +19,9 @@ const LoadingFallback = () => (
 export default function App() {
   return (
     <Layout>
-      <Hero />
+      <Suspense fallback={<LoadingFallback />}>
+        <Hero />
+      </Suspense>
       <Suspense fallback={<LoadingFallback />}>
         <About />
       </Suspense>

@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { ChevronDown, MapPin, Mail, Terminal, Cloud, Download } from "lucide-react";
 import { resumeData } from "../data";
 
-export function Hero() {
+export default function Hero() {
   return (
     <section className="relative min-h-[90vh] flex flex-col items-center justify-center px-6">
       <div className="max-w-5xl w-full mx-auto relative z-10 flex flex-col items-start md:flex-row md:items-center gap-12 text-left">
