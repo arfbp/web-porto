@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Briefcase, Calendar } from "lucide-react";
 import { resumeData } from "../data";
 
-export function Experience() {
+export default function Experience() {
   return (
     <section id="experience" className="py-24 px-6 relative z-10 w-full">
       <div className="max-w-5xl mx-auto">

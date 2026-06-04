@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Mail, Linkedin, MapPin, Send } from "lucide-react";
 import { resumeData } from "../data";
 
-export function Contact() {
+export default function Contact() {
   return (
     <section id="contact" className="py-32 px-6 relative z-10">
       <div className="max-w-5xl mx-auto flex flex-col items-center">

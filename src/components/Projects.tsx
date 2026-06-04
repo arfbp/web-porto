@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { FolderGit2, ExternalLink, ArrowRight } from "lucide-react";
 import { resumeData } from "../data";
 
-export function Projects() {
+export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 relative z-10">
       <div className="max-w-5xl mx-auto">

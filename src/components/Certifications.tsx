@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { CheckCircle, ExternalLink } from "lucide-react";
 import { resumeData } from "../data";
 
-export function Certifications() {
+export default function Certifications() {
   const credlyLink = "https://www.credly.com/users/arif-budi-prasetio/badges#credly";
 
   return (

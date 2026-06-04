@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { TerminalSquare, ShieldCheck, Database, Layers } from "lucide-react";
 import { resumeData } from "../data";
 
-export function Skills() {
+export default function Skills() {
   const categoryIcons: Record<string, React.ReactNode> = {
     "Cloud Platforms": <div className="w-8 h-8 rounded-lg bg-theme-surface-hover text-brand-500 flex items-center justify-center border border-theme-border"><Database className="w-4 h-4" /></div>,
     "Infrastructure": <div className="w-8 h-8 rounded-lg bg-theme-surface-hover text-brand-500 flex items-center justify-center border border-theme-border"><Layers className="w-4 h-4" /></div>,

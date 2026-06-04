@@ -19,6 +19,27 @@ export default defineConfig(() => {
       hmr: process.env.DISABLE_HMR !== 'true',
       // Disable file watching when DISABLE_HMR is true to save CPU during agent edits.
       watch: process.env.DISABLE_HMR === 'true' ? null : {},
-    },
-  };
+    },    build: {
+      rollupOptions: {
+        output: {
+          manualChunks: (id) => {
+            // Vendor libraries
+            if (id.includes('node_modules/react') || id.includes('node_modules/react-dom')) {
+              return 'vendor-react';
+            }
+            if (id.includes('node_modules/motion')) {
+              return 'vendor-motion';
+            }
+            if (id.includes('node_modules/lucide-react')) {
+              return 'vendor-ui';
+            }
+            // Shared data and utilities
+            if (id.includes('src/data') || id.includes('src/types')) {
+              return 'shared';
+            }
+          },
+        },
+      },
+      chunkSizeWarningLimit: 1000,
+    },  };
 });

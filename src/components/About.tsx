@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { resumeData } from "../data";
 
-export function About() {
+export default function About() {
   return (
     <section id="about" className="py-24 px-6 relative z-10">
       <div className="max-w-5xl mx-auto">
