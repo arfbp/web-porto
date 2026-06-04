@@ -13,7 +13,7 @@ export default function About() {
         >
           <div className="w-full flex justify-start items-center mb-4 px-4">
             <div className="flex flex-col gap-1">
-              <div className="text-3xl font-bold text-theme-heading mb-1">7+</div>
+              <div className="text-3xl font-bold text-theme-heading mb-1">9+</div>
               <div className="text-[9px] uppercase tracking-[0.2em] text-theme-text-faint">Years Experience</div>
             </div>
           </div>

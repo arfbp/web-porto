@@ -7,7 +7,7 @@ export const resumeData = {
     location: "Jakarta Selatan, Indonesia",
     linkedin: "https://www.linkedin.com/in/arif-budi-prasetio/",
     about:
-      "IT professional with 7+ years of experience, including 6 years in IT Support and 1 year as a Server Engineer. Skilled in delivering effective technical solutions to enhance operational efficiency. Keen interest in cloud technologies and infrastructure, with a strong drive to adopt and implement scalable cloud-based systems.",
+      "IT professional with 8+ years of experience, including 6 years in IT Support and 1 year as a Server Engineer. Skilled in delivering effective technical solutions to enhance operational efficiency. Keen interest in cloud technologies and infrastructure, with a strong drive to adopt and implement scalable cloud-based systems.",
   },
   workExperience: [
     {
